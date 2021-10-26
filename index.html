@@ -10,17 +10,21 @@
 </head>
 <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
+        <a-assets>
+            <img id="boy_img_right" src="src/assets/boy_right.png">
+            <img id="boy_img_left" src="src/assets/boy_left.png">
+        </a-assets>
+
         <a-marker present="hiro">
-            <a-box position="0 0.5 0" material="color: red;">
-                <a-animation attribute="rotation"
-                    dur="3000"
-                    to="360 360 0"
-                    repeat="indefinite"
-                    easing="linear">
-                </a-animation>
+            <a-plane position="0 0 0" rotation="0 0 0" scale="8 6 0" color="#B400AB"></a-plane>    
+            <a-image id="boy" position="0 -.3 1" rotation="0 10 0" width="1"  src="#boy_img_right"></a-image>
+            <!-- <a-text value="Frame Academy Project #1" position="-1.15 1.31 .21" rotation="0 10 0" width="4" color="black"></a-text>    -->
             </a-box>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
+    <script src="./src/main.js"></script>
+    <!-- <div id="gamepadContainer"></div>
+    <script src='./src/gamepad.js'></script> -->
 </body>
 </html>

@@ -1,0 +1,33 @@
+#board {
+    background: rgb(180, 0, 171);
+    opacity: 0.8;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+    width: 700px;
+    border: 2px white solid;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* body{
+    background-color: aqua;
+} */
+
+#boy {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+#building {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+}
+
+#pizza {
+    height: 50px;
+    width: 70px;
+    position: absolute;
+}
